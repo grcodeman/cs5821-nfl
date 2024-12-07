@@ -2,9 +2,9 @@
 
 This project uses a Random Forest regressor to predict the total number of points scored in an NFL game, given two teams, an over/under line, and a point spread.
 
-## How to Run
+## How to Run 🏈
 
-1. **Install Requirements:**  
+1. **Install Requirements:** 
    Make sure you have all necessary dependencies installed.  
    *Example:*  
    ```bash
