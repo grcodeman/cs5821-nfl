@@ -16,8 +16,6 @@ features = data[[
         "score", "third_down_att", "third_down_comp", "yards"
 ]]
 
-
-
 # Calculate the correlation matrix
 correlation_matrix = features.corr()
 
