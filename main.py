@@ -1,7 +1,5 @@
 import pandas as pd
-import numpy as np
 import pickle
-from sklearn.ensemble import RandomForestRegressor
 
 # load datasets
 team_stats = pd.read_csv('data/nfl_team_stats.csv')
@@ -87,14 +85,16 @@ def predict_total_points(home_team, away_team, over_under_line, spread_favorite,
 def main():
 
     # get input from user
-    team_home_input = input("\nHome Team: ")
-    team_away_input = input("\nAway Team: ")
-    game_ou_input = input("\nO/U: ")
-    game_spread = input("\nSpread: ")
-    season = 2023
+    team_home_input = input("Home Team: ")
+    team_away_input = input("Away Team: ")
+    game_ou_input = input("O/U: ")
+    game_spread = input("Spread: ")
+    season = 2023 # using last seasons team stats to predict
 
     prediction = predict_total_points(team_home_input,team_away_input,game_ou_input,game_spread,season)
-    print("\n"+prediction)
+
+    print("")
+    print(prediction)
 
     return 0    
 
